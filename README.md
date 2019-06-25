@@ -2,7 +2,7 @@
 
 Code for Grant et al. 2018 A Bayesian state-space model for estimating larval survival probabilities in arthropods from field counts with application to monarch butterflies (Danaus plexippus)
 
-MonarchModel.bug is the model specification for JAGS
+MonarchModel.bug - model specification for JAGS
 
 SimulateandAnalyzeMonarchCounts.R - R code for simulation and analysis of monarch butterfly field counts.  Begin here for a new simulation or analysis.  
 

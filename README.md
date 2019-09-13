@@ -1,10 +1,14 @@
 # arthropod-survival-estimation
 
-Code for Grant et al. 2019. A Bayesian state-space model for estimating larval survival probabilities in arthropods from field counts with application to monarch butterflies (Danaus plexippus).
+Code for Grant et al. 2019. Estimating arthropod survival probability from field counts:  A case study with monarch butterflies.
 
-MonarchModel.bug - model specification for JAGS
+MonarchModel.bug - JAGS model specification for survival estimation model
+
+SecondStage2.bug - model specification for meta-analysis regression
 
 SimulateandAnalyzeMonarchCounts.R - R code for simulation and analysis of monarch butterfly field counts.  Begin here for a new simulation or analysis.  
+
+MonarchFieldDataAnalysis.R - R code for analysis of monarch field data.  Data is included.  
 
 SimulateandAnalyzeMonarchCountswithScen1-3.R - R code for Scenario 1-3 from the manuscript
 

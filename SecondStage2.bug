@@ -1,0 +1,17 @@
+model
+{
+  a ~ dnorm(0, 1e-6)
+  b1 ~ dnorm(0, 1e-6)
+  b2 ~ dnorm(0, 1e-6)
+  b3 ~ dnorm(0, 1e-6)
+  prec ~ dgamma(0.001,0.001)
+  for (i in 1:18){
+    mean[i] = a + b1*d1[i] + b2*d2[i] + b3*d3[i]
+    Pi[i] ~ dnorm(mean[i],prec)
+  }
+  predicted_mean_IA  = a + b1*1 + b2*1 + b3*1
+  predicted_mean_AGR = a + b1*1 + b2*1 + b3*0
+  predicted_mean_NAT = a + b1*1 + b2*0 + b3*0
+  predicted_mean_ROW = a + b1*0 + b2*0 + b3*0
+  predicted_mean_ALL = (predicted_mean_IA+predicted_mean_AGR+predicted_mean_NAT+predicted_mean_ROW)/4
+}

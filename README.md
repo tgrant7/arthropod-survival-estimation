@@ -1,6 +1,6 @@
 # arthropod-survival-estimation
 
-Code for Grant et al. 2019. Estimating arthropod survival probability from field counts:  A case study with monarch butterflies.
+Code for Grant et al. () Estimating arthropod survival probability from field counts:  A case study with monarch butterflies.
 
 MonarchModel.bug - JAGS model specification for survival estimation model
 

@@ -14,4 +14,4 @@ SimulateandAnalyzeMonarchCountswithScen1-3.R - R code for Scenario 1-3 from the 
 
 SimulateandAnalyzeScen4-5.R - R code for Scenarios 4-5 from the manuscript
 
-Flowchart of Model Objects Simple.pptx - to aid in comprehension of the model, a flowchart (similar to a DAG, but not quite) of model is provided.  Originally, I intended to include ADD and SDC in the model specification (the .bug file) so that only the temp data and counts would have to be provided to JAGS.  But somehow the ADD and SDC matrices threw an error in JAGS, and after discussing it with Martyn Plummer the easiest solution was to move ADD and SDC outside.  
+Flowchart of Model Objects Simple.pptx - to aid in comprehension of the model code, a flowchart (similar to a DAG, but not quite) of model is provided.  Originally, I intended to include ADD and SDC in the model specification (the .bug file) so that only the temp data and counts would have to be provided to JAGS.  But somehow the ADD and SDC matrices threw an error in JAGS, and after discussing it with Martyn Plummer the easiest solution was to move ADD and SDC outside.  

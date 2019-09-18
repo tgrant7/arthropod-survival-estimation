@@ -141,7 +141,6 @@ S4 = S[4]^MSD[4]
 S5 = S[5]^MSD[5]
 S6 = S[6]^MSD[6]
 SC = S1*S2*S3*S4*S5*S6 #cumulative survival probability
-SN = S1*S2*S3*S4*S5 #survival probability most similar to Nail et al. 2015 estimator
 SC
 
 
@@ -847,8 +846,8 @@ library(runjags)
 #option to always calculate summary statistics
 runjags.options(force.summary=TRUE)
 
-#First dataset is Bitzer et al. 2016 data from 140th Street, collected in 2015
-#data for the 3 other example datasets in Grant et al. follow at the end of this section
+#Dataset is Bitzer et al. 2016 data from 140th Street, collected in 2015 - IAROW1 in the paper
+#data for the other datasets are in a separate R script
 
 #maximum time to pupation,
 pupamax = 16
@@ -981,34 +980,6 @@ plot(out.T.140, vars = c("S","S1","S2","S3","S4","S5","S6","SC"))
 #add some more samples
 out.T.140.e = extend.jags(out.T.140, sample = 90000)
 plot(out.T.140.e, vars = c("S","S1","S2","S3","S4","S5","S6","SC"))
-write.csv(out.T.140.e$summaries, "out.T.csv")
-
-
-
-
-
-
-#### 260th Stree dataset from Bitzer et al. 2016 data, collected in 2015 #############
-
-pupamax = 16
-n = 46 + pupamax
-MT = c(21.9,21.9,20.8,17.5,18.1,19.7,22.2,24.7,17.2,16.4,18.9,20.3,23.3,26.9,28.3,26.4,
-       24.4,23.65,26.7,26.7,24.15,23.6,20.8,20.55,21.95,23.6,26.1,24.4,24.75,22.5,21.95,21.95,22.75,23.6,25.25,23.6,20.85,21.7,21.4,23.85,24.45,24.15,
-       22.5,21.7,22.2,21.7,24.4,23.6,23.6,24.15,19.75,15.8,17.2,20.25,20.85,17.5,15.25,15.85,16.65,18.05,18.9,18.35)
-length(MT)
-
-C = matrix(nrow = 46, ncol = 6)
-C[1,] = c(37,2,4,0,0,0)
-C[9,] = c(90,15,9,7,1,1)
-C[17,] = c(135,19,5,5,3,7)
-C[24,] = c(156,22,7,3,1,3)
-C[31,] = c(121,5,2,3,1,3)
-C[38,] = c(77,1,7,2,1,1)
-C[46,] = c(11,1,0,2,3,2)
-
-
-
-
 
 
 

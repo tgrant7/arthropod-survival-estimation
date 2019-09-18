@@ -8,7 +8,7 @@ SecondStage2.bug - model specification for meta-analysis regression
 
 SimulateandAnalyzeMonarchCounts.R - R code for simulation and analysis of monarch butterfly field counts.  Begin here for a new simulation or analysis.  
 
-MonarchFieldDataAnalysis.R - R code for analysis of monarch field data.  Data is included.  
+MonarchFieldDataAnalysis.R - R code for analysis of monarch field data reported in the paper.  Data is included.  
 
 SimulateandAnalyzeMonarchCountswithScen1-3.R - R code for Scenario 1-3 from the manuscript
 

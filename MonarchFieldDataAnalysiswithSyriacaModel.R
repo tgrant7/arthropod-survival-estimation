@@ -6,7 +6,7 @@
 library(runjags)
 #option to always calculate summary statistics
 runjags.options(force.summary=TRUE)
-
+runjags.options(jagspath = 'C:/Users/tgrant/AppData/Local/JAGS/JAGS-4.3.0/x64/bin')
 
 #Example dataset is Bitzer et al. 2016 data from 140th Street, collected in 2015
 #IA ROW1 in ms supp info

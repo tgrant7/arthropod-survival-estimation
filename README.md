@@ -6,6 +6,7 @@ The new model and testing on the new model will be described in a monarch butter
 I am leaving the older code here because it can still be useful. 
 
 
+
 --------------------------------------------------------------------------------------------
 
 Code for Grant et al. (2020) Estimating arthropod survival probability from field counts:  A case study with monarch butterflies.
